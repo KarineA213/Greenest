@@ -1,4 +1,5 @@
-package com.hackathon.greenest.user.model;
+package com.greenest.entities;
+
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -17,9 +18,6 @@ public class Login {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-
-//    @OneToOne(cascade = CascadeType.ALL)
-//    private User user;
 
     private String email;
     private String password;

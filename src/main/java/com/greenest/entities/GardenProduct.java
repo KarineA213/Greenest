@@ -1,6 +1,5 @@
-package com.hackathon.greenest.garden.model;
+package com.greenest.entities;
 
-import com.hackathon.greenest.greenhouse.model.Greenhouse;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

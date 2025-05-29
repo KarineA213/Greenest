@@ -1,4 +1,6 @@
-package com.hackathon.greenest.common.enums;
+package com.greenest.entities.common.enums;
+
+
 
 public enum Status {
 
