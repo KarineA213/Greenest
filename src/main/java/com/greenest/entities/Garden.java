@@ -1,7 +1,7 @@
-package com.hackathon.greenest.garden.model;
+package com.greenest.entities;
 
-import com.hackathon.greenest.greenhouse.model.Greenhouse;
-import com.hackathon.greenest.user.model.User;
+import com.greenest.entities.GreenHouse;
+import com.greenest.entities.GardenProduct;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -22,7 +22,7 @@ public class Garden {
 
     @ManyToOne
     @JoinColumn(name = "greenhouse_id")
-    private Greenhouse greenhouse;
+    private GreenHouse greenhouse;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "garden_product_id")

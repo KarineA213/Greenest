@@ -1,10 +1,6 @@
-package com.hackathon.greenest.monotoring.model;
+package com.greenest.entities;
 
-import com.hackathon.greenest.common.enums.Status;
-import com.hackathon.greenest.garden.model.Garden;
-import com.hackathon.greenest.greenhouse.model.Greenhouse;
-
-import com.hackathon.greenest.user.model.User;
+import com.greenest.entities.common.enums.Status;
 import jakarta.persistence.*;
 import jdk.jshell.Snippet;
 import lombok.AllArgsConstructor;
@@ -30,7 +26,7 @@ public class Monotoring {
 
     @ManyToOne
     @JoinColumn(name = "greenhouse_id")
-    private Greenhouse greenhouse;
+    private GreenHouse greenhouse;
 
     @OneToOne
     @JoinColumn(name = "garden_id")
